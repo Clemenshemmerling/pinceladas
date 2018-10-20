@@ -1,5 +1,31 @@
+
+
 nav {
-    background-color: #0c0338;
+    background-color: #000000;
+}
+
+.menu-a {
+    color: #9A9A9A;
+}
+
+.menu-a:hover {
+    color: #7b7b7b;
+}
+
+.material-icons {
+    color: #9A9A9A;
+}
+
+#mobile {
+    background: black;
+}
+
+#mobile a {
+    color: #9A9A9A;
+}
+
+.davbar-fixed {
+    border-bottom: #FFCC00 solid 4px;
 }
 
 .row {
