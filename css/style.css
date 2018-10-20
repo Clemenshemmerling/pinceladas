@@ -2,10 +2,19 @@
 
 nav {
     background-color: #000000;
+    border-bottom: #FFCC00 solid 4px;
+}
+
+.brand-logo {
+    margin-bottom: 50px;
 }
 
 .menu-a {
     color: #9A9A9A;
+}
+
+.nav-wrapper {
+    margin-top: -4px;
 }
 
 .menu-a:hover {
@@ -22,10 +31,6 @@ nav {
 
 #mobile a {
     color: #9A9A9A;
-}
-
-.davbar-fixed {
-    border-bottom: #FFCC00 solid 4px;
 }
 
 .row {
