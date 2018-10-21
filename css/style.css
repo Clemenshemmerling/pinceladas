@@ -38,6 +38,16 @@ nav {
     margin: 0;
 }
 
+#galeria {
+    padding: 30px 50px;
+    background: #ffcc00;
+}
+
+.card-image {
+    overflow: hidden;
+    height: 170px;
+}
+
 footer {
     background-image: url(../img/footpic.jpg);
     background-position: center;
@@ -87,4 +97,11 @@ i.material-icons, i.fab {
 
 a {
     color: #9A9A9A;
+}
+
+@media (max-width: 600px) { 
+    .card-image {
+        height: auto;
+        overflow: auto;
+    }
 }
