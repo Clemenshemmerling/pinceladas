@@ -18,8 +18,8 @@
                 <div class="nav-wrapper">
                     <a href="#!" class="brand-logo"><img src="img/logo.png" alt="Logo"></a>
                     <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a class="menu-a" href="#">Inicio</a></li>
+                    <ul class="right hide-on-med-and-down" id="menu">
+                        <li><a class="menu-a" href="#app">Inicio</a></li>
                         <li><a class="menu-a" href="#acerca">Acerca</a></li>
                         <li><a class="menu-a" href="#galeria">Galería</a></li>
                         <li><a class="menu-a" href="#contacto">Contacto</a></li>
@@ -28,10 +28,10 @@
             </nav>    
         </div>
         <ul class="sidenav" id="mobile">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#acerca">Acerca</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a class="sidenav-close" href="#app">Inicio</a></li>
+            <li><a class="sidenav-close" href="#acerca">Acerca</a></li>
+            <li><a class="sidenav-close" href="#galeria">Galería</a></li>
+            <li><a class="sidenav-close" href="#contacto">Contacto</a></li>
         </ul>
         <header>
             <video autoplay loop class="responsive-video">
@@ -39,7 +39,50 @@
             </video>
         </header>
         <div class="content">
+            <div id="acerca">
+                <div class="container">
+                    <h1>Acerca</h1>
+                    <h4>Astrofotógrafo Productor y Director audiovisual de contenido científico/cultural.</h4>
+                    <p>Fue Astrofotógrafo oficial en el Planetario Ciudad de La Plata del Observatorio Astronómico de la Facultad de Ciencias Astronómicas y Geofísicas en La Plata,  Argentina, en donde colaboró con el desarrollado proyectos audiovisuales y material de divulgación científica astronómica en formato para diferentes producciones, entre ellas: El cielo del mes, Tránsito de Mercurio, Eclipse Total de Luna, Eclipse Anular de Sol.</p>
+                    <p>Taller Full Dome año 2015/16 del Centro de Experimentación e Investigación en Artes Electrónicas (CEIArtE) de la Universidad Nacional deTres de Febrero y el Planetario Galileo Galilei de la Ciudad de Buenos Aires completando la producción ¨La contaminación lumínica¨</p>
+                    <p>Director de Astrofotografía, timelapses y fotografía en el Documental "El Camino Eterno" Producido por el Planetario Ciudad de La Plata.</p>
+                    <p>Productor y director de programas de turismo astronómico en Guatemala, Argentina y Perú.</p>
+                    <p>Su trabajo ha sido reconocido internacionalmente con publicaciones en diversos sitios de divulgación científica en donde se destacan imágenes publicadas NASA, Sky & Telescope la imagen (She said Yes!) publicada en The Daily News, Yahoo News, Scape.com News entre otros medios de comunicación internacionales dando varias veces la vuelta al mundo.</p>
+                    <p>Finalista del concurso (TWAN) por sus siglas en inglés, The World At Night en la versión 2016.</p>
+                    <p>Mención especial en el concurso (TWAN) versión 2017.</p>
+                    <p>Finalista en la sección TimeLapses de PhotographyNightscape Awards versión 2018.</p>
+                    <p>Embajador de Fornax Mounts</p>
+                    <p>Embajador de Photonightscape Awards</p>
+                    <p>Embajador de la International Dark Sky Association IDA</p>
+                    <p>Ha sido invitado a brindar charlas y talleres sobre Astrofotografía y Contaminación Lumínica en distintas ocasiones entre Guatemala, Argentina y Perú.</p>
+                    <div class="row">
+                        <div class="col s12">
+                            <h5>Expositor de arte internacional con presentaciones en:</h5>
+                            <ul>
+                                <li>México</li>
+                                <li>Guatemala</li>
+                                <li>Argentina</li>
+                                <li>Francia</li>
+                            </ul>
+                        </div>
+                        <div class="col s12">
+                            <h5>Proximamente:</h5>
+                            <ul>
+                                <li>Honduras</li>
+                                <li>India</li>
+                                <li>Perú</li>
+                                <li>España</li>
+                                <li>Francia</li>
+                                <li>Suecia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="galeria">
+                <div class="center">
+                    <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
                 <div class="row">
                     <div class="col s12 m4" v-for="g in galeria">
                         <div class="card">
@@ -51,7 +94,7 @@
                                 <p class="truncate">{{g.text}}</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">Leer más</a>
+                                <a class="modal-trigger" @click="detail(g)" href="#modal">Leer más</a>
                             </div>
                         </div>
                     </div>
@@ -81,13 +124,13 @@
                             </div>
                             <div class="row social center">
                                 <div class="col s4">
-                                    <a href="https://www.instagram.com/pinceladasnocturnas/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a class="instagram" href="https://www.instagram.com/pinceladasnocturnas/" target="_blank"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="col s4">
-                                    <a href="https://www.facebook.com/MilkyWayAddicted/" target="_blank"><i class="fab fa-facebook"></i></a>
+                                    <a class="facebook" href="https://www.facebook.com/MilkyWayAddicted/" target="_blank"><i class="fab fa-facebook"></i></a>
                                 </div>
                                 <div class="col s4">
-                                    <a href="https://twitter.com/m_acubens" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a class="twitter" href="https://twitter.com/m_acubens" target="_blank"><i class="fab fa-twitter"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -108,6 +151,16 @@
                         </div>
                     </div>
                 </div>
+                <div id="modal" class="modal">
+                    <div class="modal-content center">
+                        <h4>{{info.titulo}}</h4>
+                        <img class="responsive-img" :src="info.link">
+                        <p>{{info.text}}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrrar</a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
@@ -115,6 +168,7 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/app.js"></script>
