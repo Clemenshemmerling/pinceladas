@@ -42,6 +42,10 @@ nav {
     color: #7b7b7b
 }
 
+.next {
+    margin-top: 40px;
+}
+
 #galeria {
     padding: 30px 50px;
     background: #ffcc00;
