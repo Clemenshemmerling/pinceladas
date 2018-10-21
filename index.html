@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />   
 </head>
 <body>
@@ -36,12 +37,54 @@
         </video>
     </header>
     <footer>
-        <div class="row">
-            <div class="col s12 m6">
-                <h5 class="text-uppercase center-align">COMUNÍCATE</h5>
-            </div>
-            <div class="col s12 m6">
-                <h5 class="text-uppercase center-align">CONTÁCTANOS</h5>
+        <div class="shadow-foot">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h5 class="text-uppercase center-align foot-title">COMUNÍCATE</h5>
+                    <div class="border-foot center-align"></div>
+                    <div class="container">
+                        <div class="row mar-top center">
+                            <div class="col s12 m2 center"><i class="material-icons">email</i></div>
+                            <div class="col s12 m10">
+                                <a class="left-align" href="mailto:sergio@pinceladasnocturnas.com">
+                                    <h6>sergio@pinceladasnocturnas.com</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mar-top center">
+                            <div class="col s12 m2 center"><i class="material-icons">language</i></div>
+                            <div class="col s12 m10">
+                                <h6 class="left-align">pinceladasnocturnas.com</h6>
+                            </div>
+                        </div>
+                        <div class="row social center">
+                            <div class="col s4">
+                                <a href="instagram.com/pinceladasnocturnas" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="col s4">
+                                <a href="facebook.com/milkywayaddicted" target="_blank"><i class="fab fa-facebook"></i></a>
+                            </div>
+                            <div class="col s4">
+                                <a href="https://twitter.com/m_acubens" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <h5 class="text-uppercase center-align foot-title">CONTÁCTANOS</h5>
+                    <div class="border-foot center-align"></div>
+                    <div class="container">
+                        <form action="contacto.php" method="post">
+                                <input type="text" name="name" placeholder="Nombre:">
+                                <input type="text" name="email" placeholder="E-mail:">
+                                <input type="text" name="telefono" placeholder="Teléfono:">
+                                <textarea name="descripcion" cols="80" rows="10" placeholder="Descripción:"></textarea>
+                                <div class="center">
+                                    <button type="submit" class="btn red">ENVIAR</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

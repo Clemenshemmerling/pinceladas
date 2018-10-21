@@ -39,5 +39,52 @@ nav {
 }
 
 footer {
+    background-image: url(../img/footpic.jpg);
+    background-position: center;
+}
+
+.shadow-foot {
+    color: #9A9A9A;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.foot-title {
+    color: #9A9A9A;
+}
+
+::placeholder {
+    color: #9A9A9A;
+}
+
+input, textarea {
+    color: #9A9A9A;
+}
+
+textarea {
+    height: 12rem;
+}
+
+.border-foot {
+    background: #FFCC00;
+    width: 200px;
+    height: 2px;
+    margin: 0 auto;
+}
+
+.mar-top {
+    margin-top: 30px;
+}
+
+i.material-icons, i.fab {
+    font-size: 40px;
+    color: #FFCC00;
+}
+
+.social {
+    margin-top: 100px;
+}
+
+a {
     color: #9A9A9A;
 }
