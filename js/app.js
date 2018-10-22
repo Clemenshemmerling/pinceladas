@@ -84,6 +84,10 @@ var app = new Vue({
         $('#mobile a').offsetScroller();
       
         $().offsetScroller.scrollToHash(window.location.hash);
-      
+
+        $(document).bind("contextmenu",(e) => {
+            return false;
+        });
+     
     }
   });

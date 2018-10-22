@@ -1,4 +1,6 @@
-
+#app {
+    background: #000000;
+}
 
 nav {
     background-color: #000000;
@@ -40,6 +42,10 @@ nav {
 
 #acerca {
     color: #7b7b7b
+}
+
+#acerca h1, #acerca h5 {
+    color: #FFCC00 !important;
 }
 
 .next {
