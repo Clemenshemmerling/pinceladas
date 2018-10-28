@@ -44,8 +44,8 @@ nav {
     color: #7b7b7b
 }
 
-#acerca h1, #acerca h5 {
-    color: #FFCC00 !important;
+.yell {
+    color: #FFCC00;
 }
 
 .next {

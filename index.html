@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html oncontextmenu="return false">
+<html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />   
 </head>
-<body  oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
+<body>
     <div id="app">
 
         <div class="navbar-fixed">
@@ -35,15 +35,13 @@
             <li><a class="sidenav-close" href="#contacto">Contacto</a></li>
         </ul>
         <header>
-            <video autoplay loop class="responsive-video">
-                <source src="video/head.mp4" type="video/mp4">
-            </video>
+           <img src="img/portada.jpeg"  alt="Astrofotografía" style="width: 100%;">
         </header>
         <div class="content">
             <div id="acerca">
                 <div class="container">
-                    <h1>Acerca</h1>
-                    <h4>Astrofotógrafo Productor y Director audiovisual de contenido científico/cultural.</h4>
+                    <h4 class="yell">Acerca</h4>
+                    <h6>Astrofotógrafo Productor y Director audiovisual de contenido científico/cultural.</h6>
                     <div class="center">
                             <img class="responsive-img" src="img/info-1.jpg" alt="Galeria">
                     </div>
@@ -52,6 +50,9 @@
                     <p>Director de Astrofotografía, timelapses y fotografía en el Documental "El Camino Eterno" Producido por el Planetario Ciudad de La Plata.</p>
                     <p>Productor y director de programas de turismo astronómico en Guatemala, Argentina y Perú.</p>
                     <p>Su trabajo ha sido reconocido internacionalmente con publicaciones en diversos sitios de divulgación científica en donde se destacan imágenes publicadas NASA, Sky & Telescope la imagen (She said Yes!) publicada en The Daily News, Yahoo News, Scape.com News entre otros medios de comunicación internacionales dando varias veces la vuelta al mundo.</p>
+                    <div class="center">
+                        <iframe width='100%' height='600' src='https://roundme.com/embed/278821/862854' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
                     <p>Finalista del concurso (TWAN) por sus siglas en inglés, The World At Night en la versión 2016.</p>
                     <p>Mención especial en el concurso (TWAN) versión 2017.</p>
                     <p>Finalista en la sección TimeLapses de PhotographyNightscape Awards versión 2018.</p>
@@ -61,14 +62,14 @@
                     <p>Ha sido invitado a brindar charlas y talleres sobre Astrofotografía y Contaminación Lumínica en distintas ocasiones entre Guatemala, Argentina y Perú.</p>
                     <div class="row">    
                         <div class="col s12 m6">
-                            <h5>Expositor de arte internacional con presentaciones en:</h5>
+                            <h4 class="yell">Expositor de arte internacional con presentaciones en:</h4>
                             <ul>
                                 <li>México</li>
                                 <li>Guatemala</li>
                                 <li>Argentina</li>
                                 <li>Francia</li>
                             </ul>
-                            <h5 class="next">Proximamente:</h5>
+                            <h4 class="next yell">Proximamente:</h4>
                             <ul>
                                 <li>Honduras</li>
                                 <li>India</li>
@@ -110,7 +111,7 @@
             <div class="shadow-foot" id="contacto">
                 <div class="row">
                     <div class="col s12 m6">
-                        <h5 class="text-uppercase center-align foot-title">COMUNÍCATE</h5>
+                        <h4 class="text-uppercase center-align foot-title">COMUNÍCATE</h4>
                         <div class="border-foot center-align"></div>
                         <div class="container">
                             <div class="row mar-top center">
@@ -141,10 +142,10 @@
                         </div>
                     </div>
                     <div class="col s12 m6">
-                        <h5 class="text-uppercase center-align foot-title">CONTÁCTANOS</h5>
+                        <h4 class="text-uppercase center-align foot-title">CONTÁCTANOS</h4>
                         <div class="border-foot center-align"></div>
                         <div class="container">
-                            <form action="php/contacto.php" method="post">
+                            <form action="contacto.php" method="post">
                                     <input type="text" name="name" placeholder="Nombre:">
                                     <input type="text" name="email" placeholder="E-mail:">
                                     <input type="text" name="telefono" placeholder="Teléfono:">
